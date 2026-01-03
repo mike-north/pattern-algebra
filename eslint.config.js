@@ -24,6 +24,6 @@ export default [
     },
   },
   {
-    ignores: ['dist/**', 'coverage/**', '*.d.ts', 'node_modules/**'],
+    ignores: ['**/dist/**', '**/coverage/**', '**/*.d.ts', '**/node_modules/**', '**/temp/**'],
   },
 ]

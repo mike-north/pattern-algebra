@@ -17,13 +17,9 @@ export function analyzePatterns(a: CompiledPattern, b: CompiledPattern): Pattern
 
 // @public
 export interface AnchoringComparison {
-    // (undocumented)
     readonly differ: boolean;
-    // (undocumented)
     readonly explanation?: string;
-    // (undocumented)
     readonly patternAAbsolute: boolean;
-    // (undocumented)
     readonly patternBAbsolute: boolean;
 }
 
@@ -47,7 +43,6 @@ export class AutomatonLimitError extends Error {
 // @public
 export interface AutomatonState {
     readonly accepting: boolean;
-    // (undocumented)
     readonly id: number;
     readonly transitions: readonly AutomatonTransition[];
 }
@@ -64,9 +59,7 @@ export function buildQuickRejectFilter(pattern: PathPattern): QuickRejectFilter;
 // @public
 export interface CharClassSegment {
     readonly chars: string;
-    // (undocumented)
     readonly negated: boolean;
-    // (undocumented)
     readonly ranges: readonly CharRange[];
     // (undocumented)
     readonly type: 'charclass';
@@ -145,17 +138,11 @@ export const DEFAULT_MAX_DFA_STATES = 10000;
 
 // @public
 export interface DepthComparison {
-    // (undocumented)
     readonly differ: boolean;
-    // (undocumented)
     readonly explanation?: string;
-    // (undocumented)
     readonly patternAMax: number | 'unbounded';
-    // (undocumented)
     readonly patternAMin: number;
-    // (undocumented)
     readonly patternBMax: number | 'unbounded';
-    // (undocumented)
     readonly patternBMin: number;
 }
 
@@ -338,13 +325,9 @@ export function patternUnion(a: CompiledPattern, b: CompiledPattern): CompiledPa
 
 // @public
 export interface PrefixComparison {
-    // (undocumented)
     readonly differ: boolean;
-    // (undocumented)
     readonly explanation?: string;
-    // (undocumented)
     readonly patternAPrefix?: string;
-    // (undocumented)
     readonly patternBPrefix?: string;
 }
 
@@ -426,13 +409,9 @@ export interface StructuralDifferences {
 
 // @public
 export interface SuffixComparison {
-    // (undocumented)
     readonly differ: boolean;
-    // (undocumented)
     readonly explanation?: string;
-    // (undocumented)
     readonly patternASuffix?: string;
-    // (undocumented)
     readonly patternBSuffix?: string;
 }
 
