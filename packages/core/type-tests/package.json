@@ -1,5 +1,5 @@
 {
-  "name": "@pattern-compare/core-type-tests",
+  "name": "@pattern-algebra/core-type-tests",
   "private": true,
   "types": "../dist/core-public.d.ts"
 }

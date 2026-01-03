@@ -1,6 +1,6 @@
 {
-  "name": "@pattern-compare/core",
-  "description": "Core pattern comparison library",
+  "name": "@pattern-algebra/core",
+  "description": "TypeScript library for path pattern algebra - parsing, matching, and set operations on glob patterns",
   "version": "0.0.0",
   "author": "Mike North <michael.north@gmail.com>",
   "devDependencies": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mike-north/pattern-compare.git",
+    "url": "https://github.com/mike-north/pattern-algebra.git",
     "directory": "packages/core"
   },
   "scripts": {
@@ -38,7 +38,7 @@
     "check:typecheck": "tsc --noEmit",
     "clean": "rm -rf dist tmp/**/*api.{json,md} && rm -f *.tsbuildinfo tsconfig.tsbuildinfo",
     "generate:api-report": "api-extractor run --local",
-    "test": "NX_TUI=false nx run-many --target=test:unit,test:types --projects=@pattern-compare/core --output-style=stream",
+    "test": "NX_TUI=false nx run-many --target=test:unit,test:types --projects=@pattern-algebra/core --output-style=stream",
     "test:types": "cd type-tests && tsd --files '**/*.test-d.ts'",
     "test:unit": "vitest run"
   },

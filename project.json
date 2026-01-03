@@ -1,5 +1,5 @@
 {
-  "name": "pattern-compare",
+  "name": "pattern-algebra",
   "$schema": "./node_modules/nx/schemas/project-schema.json",
   "targets": {
     "check": {
@@ -23,7 +23,7 @@
       "dependsOn": [
         {
           "target": "generate:api-report",
-          "projects": "@pattern-compare/*"
+          "projects": "@pattern-algebra/*"
         }
       ]
     },
@@ -36,7 +36,7 @@
       "dependsOn": [
         {
           "target": "build",
-          "projects": "@pattern-compare/*"
+          "projects": "@pattern-algebra/*"
         }
       ]
     },

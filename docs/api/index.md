@@ -19,7 +19,7 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
-[@pattern-compare/core](./core.md)
+[@pattern-algebra/core](./core.md)
 
 
 </td><td>
